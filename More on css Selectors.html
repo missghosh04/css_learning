@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS selectors</title>
+    <style>
+        /* .box:first-child{
+        background-color: blueviolet;
+    } */
+        /* .box:nth-child(2){
+        background-color: antiquewhite;
+    } */
+        .box:nth-last-child(1) {
+            background-color: aquamarine;
+        }
+
+        .boxes * {
+            margin: 12px;
+            padding: 23px;
+
+        }
+
+        .box:nth-child(odd) {
+            background-color: rgb(19, 220, 83);
+        }
+
+        /* attribute specificity is 1 and class specificity is 10 */
+        [data-color="primary"] {
+            background-color: pink;
+        }
+
+        /* grouping selectors */
+        p,box, a {
+            margin:23px;
+            padding: 23px;
+
+        }
+        .boxes::before{
+            content: "soumi is goood";
+        }
+        .boxes::after{
+            content: "she is working on herself for herself by herself";
+        }
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+        .box::first-letter{
+            color: red;
+            font-size: 45px;
+        }
+        input::placeholder{
+            color :blue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">hello i am first child</div>
+        <div data-color="primary" class="box">hello i am second child</div>
+        <div class="box">hello i am third child</div>
+        <div class="box">hello i am fourth child</div>
+        <input type="text" placeholder="TYPE YOUR NAME HERE">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css sizing units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 16px;
+        }
+        /* if inline element then can't set margin auto*/
+        .box{
+            border:2px  solid blue;
+            /*width: 2048px;*/
+            width: 80vw;
+            height: 10vh;
+            margin:auto;
+            background-color: aquamarine;
+            box-sizing: border-box;
+        }
+        .container{
+            border:2px  solid blue;
+            /*width: 2048px;*/
+            width: 80vw;
+            height: 80vh;
+            margin: 23px auto;
+            background-color: aquamarine;
+            box-sizing: border-box; 
+            font-size: 16px; 
+            min-height: 10vh;
+            
+        }
+        .container> p{
+            font-size: 2rem;
+            border:2px  solid blue;
+            width: 50%;
+        }
+        .container >div> div{
+            border:2px  solid blue;
+            width: 50%;
+
+        }
+        .mycont{
+            border:2px  solid blue;
+            margin: 23px auto;
+            background-color: rgb(85, 129, 23);
+            color: rgb(57, 45, 129);
+            font-size: 22px;
+            /*width: 100vmin;*/
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="box">Css sizing units</h1>
+    </div>
+    
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, illo quod iusto, deserunt at excepturi dolor possimus soluta distinctio a numquam esse quidem.
+            <div>
+                heheheh huhu hahahaha
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="mycont">
+        i am another container
+    </div>
+</body>
+</html>

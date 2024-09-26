@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animations</title>
+    <style>
+        .container {
+            background-color: rgb(185, 230, 38);
+            height: 600vh;
+            width: 60vw;
+
+        }
+
+        .box {
+            background-color: rgb(27, 88, 27);
+            height: 10vh;
+            width: 10vw;
+            /* animation: SoumikaAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0, 0, 0.02, 1.11);
+            animation-delay: 2s;
+            animation-direction: alternate-reverse;
+            animation-play-state: paused; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: SoumikaAnimation 3s ease-in-out 1s 1,
+            Soumi2 3s ease-in-out 3s 1;
+        }
+
+        @keyframes SoumikaAnimation {
+            from {
+                background-color: blueviolet;
+            }
+
+            to {
+                background-color: brown;
+                transform: translateX(1000px);
+            }
+        }
+        @keyframes Soumi2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(300deg);
+            }
+            80%{
+                transform: rotate(400deg);
+            }
+            100%{
+                transform: rotate(500deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+
+</html>

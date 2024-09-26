@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css object-fit and object cover property</title>
+    <style>
+        .container{
+            padding: 20px;
+            width: 50vw;
+            height: 80vh;
+            border: 10px solid skyblue;
+            background-color: aquamarine;
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9K8g2I-2lQL2KPNYbyJQq2ddIiRdTg7yVdA&s);
+            background-position: center center;
+            background-repeat: repeat-x;
+            background-clip: padding-box;
+        }
+        img{
+            width:50vw;
+            height: 80vh;
+            /* object-fit: cover;  */
+            /* object-position: 10px 10px; */ 
+            /* object-fit: fill; */
+            /* object-fit: contain; */
+            /* object-fit: scale-down; */
+            /* object-fit: none; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9K8g2I-2lQL2KPNYbyJQq2ddIiRdTg7yVdA&s" alt=""> -->
+    </div>
+</body>
+</html>

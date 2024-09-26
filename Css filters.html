@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css filters</title>
+    <style>
+        /* img{ 
+            filter: blur(10px);
+        }*/
+        .image1{
+            filter: brightness(200%) contrast(200%);
+        }
+        .image2{
+            /* filter: invert(1);
+            invert value 0-1 */
+            filter: opacity(.5);
+            /* visibility of an image called opacity */
+            
+            
+        }
+        .image3{
+            /* filter: grayscale(100%); */
+            filter: sepia(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img  class="image1"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNcAu_clVcDHwwqRm8gkHCSV-l1-zL-TnKizpTMrgDHia6KT3fc1iZuZejZA&s" alt="">
+        <img class="image2" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Shah_Rukh_Khan_graces_the_launch_of_the_new_Santro.jpg" alt="">
+        <img class="image3" src="https://www.telugu360.com/wp-content/uploads/2024/07/Akshay-Kumar.jpg" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css media Query</title>
+    <style>
+        body {
+            background-color: brown;
+
+        }
+
+        /* @media not|only mediatype and (expression){
+            css code;
+        } */
+        @media only screen and (orientation:Landscape){
+            body{
+                background-color: purple;   
+            }
+            
+        }
+        @media only screen and (max-width:455px) {
+            body {
+                background-color: blue;
+            }
+            .Boxes{
+            flex-direction: column;
+        }
+            
+        }
+        .Boxes{
+            display: flex;
+        }
+        .Box {
+                width: 344px;
+                height: 344px;
+                background-color: aqua;
+                
+                padding: 3px;
+                margin: 3px;
+                border: 2px solid black;
+            }
+    </style>
+</head>
+
+<body>
+    <div>
+        hey i have red body
+    </div>
+    <div>
+        <div class="Boxes">
+            <div class="Box"></div>
+            <div class="Box"></div>
+            <div class="Box"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>

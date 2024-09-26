@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container {
+            border: 2px solid rgb(226, 14, 14);
+            height: 100vh;
+            width: 100vw;
+            background-color: blanchedalmond;
+            display: flex;
+            /* left to right by flex box default */
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* align-content: center; */
+            /* there is no justify items but there is align items for online which we does not need to wrap and justify-content when there is too many contents to wrap */
+            flex-flow: row wrap;
+            /* flex-flow is used when we want say which way it wrap row or coloumn side */
+            /* gap:30px; */
+            /* row-gap: 10px;
+    column-gap: 10px; */
+            gap: 30px 12px;
+        }
+
+        .item {
+            border: 1px solid black;
+            height: 50px;
+            width: 50px;
+            /* margin: 10px; */
+            background-color: violet;
+            flex-grow: 1;
+
+        }
+
+        .item-1 {
+            flex-grow: 2;
+            /* Flex grow is multiplying items flex grow in item 1 cz order 1 is only implemented in item-1 */
+            /* flex-shrink: 3; */
+            /* flex-shrink is used to remove the size means if it is 2 then it will half when wrap is off in different responsive architechture */
+            align-self: flex-end;
+        }
+
+        .order-1 {
+            order: 1;
+
+        }
+
+        .order-2 {
+            order: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1 order-1">1</div>
+        <div class="item order-2">2</div>
+        <div class="item order-2">3</div>
+        <div class="item order-2">4</div>
+        <div class="item order-2">5</div>
+        <div class="item order-2">6</div>
+        <div class="item order-2">7</div>
+        <div class="item order-2">8</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

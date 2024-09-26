@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css specificity</title>
+    <style>
+        /*specificity of elementselector is 1*/
+        h1 {
+            color: aqua;
+        }
+
+        /*specificity of classselector is 10*/
+        .red {
+            color: red;
+        }
+
+        /*specificity of classselector is 1+10=11*/
+        h1.yellow {
+            color: yellow;
+        }
+        .purple {
+            color: blueviolet;
+        }
+
+        /*this is attribute selctor specificity of elementselector is 1*/
+        [data-x=a] {
+            color: yellow;
+        }
+        /*specificity of classselector is 1+10+10+10+10=41*/
+        /*a.harryclass.rohan-class[href]:hover {
+            color: red;
+        }*/
+    </style>
+</head>
+
+<body>
+    <h1 class="red yellow purple" data-x="a">CSS specificity</h1>
+    <p>!important is most prioritized</p>
+    <p>order of appearence is also important</p>
+    <p> if multiple selectors present in one line then plus all the value
+
+    </p>
+    <ol>
+        <li>inline selector</li>
+        <li>id selector</li>
+        <li>class or attributeselectors </li>
+        <li>element selector</li>
+        <li>unoversal selector</li>
+    </ol>
+</body>
+
+</html>
